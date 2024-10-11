@@ -1,5 +1,8 @@
 <template>
-  <header class="flex flex-col gap-y-6 w-full mb-[2vh] lg:mt-[1vh]">
+  <section
+    aria-label="main introduction"
+    class="flex flex-col gap-y-6 w-full mb-[2vh] lg:mt-[1vh]"
+  >
     <section
       class="flex w-full flex-col gap-y-2 items-center text-center max-w-[37.5rem] mx-auto"
     >
@@ -42,5 +45,5 @@
         <Button class="m-1 px-4 py-1.5">Seach your event</Button>
       </form>
     </section>
-  </header>
+  </section>
 </template>
