@@ -12,4 +12,11 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+  modules: ["shadcn-nuxt"],
+  components: [
+    {
+      path: "~/components",
+      pathPrefix: false,
+    },
+  ],
 });
