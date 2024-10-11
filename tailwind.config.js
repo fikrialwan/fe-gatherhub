@@ -1,4 +1,5 @@
 const animate = require("tailwindcss-animate")
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,8 +14,10 @@ module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
-
   theme: {
+    fontFamily: {
+      inter: ["Inter", ...defaultTheme.fontFamily.sans],
+    },
     container: {
       center: true,
       padding: "2rem",

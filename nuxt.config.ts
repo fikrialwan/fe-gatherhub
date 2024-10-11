@@ -12,11 +12,16 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
-  modules: ["shadcn-nuxt"],
+  modules: ["shadcn-nuxt", "@nuxtjs/google-fonts"],
   components: [
     {
       path: "~/components",
       pathPrefix: false,
     },
   ],
+  googleFonts: {
+    families: {
+      Inter: [300, 400, 500, 600, 700],
+    },
+  },
 });
